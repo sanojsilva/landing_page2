@@ -12,11 +12,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@zeit/next-css": "^1.0.1",
     "next": "^7.0.2",
     "next-images": "^1.0.4",
     "react": "^16.7.0",
     "react-burger-menu": "^2.5.4",
     "react-dom": "^16.7.0",
+    "react-reveal": "^1.2.2",
+    "react-scroll": "^1.7.10",
+    "react-slick": "^0.23.2",
     "styled-components": "^4.1.3"
   }
 }

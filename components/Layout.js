@@ -23,7 +23,9 @@ const styles = {
   bmMenu: {
     background: '#373a47',
     padding: '2.5em 1.5em 0',
-    fontSize: '1.15em'
+    fontSize: '1.15em',
+    overflow: 'hidden !important',
+    position: 'fixed !important'
   },
   bmMorphShape: {
     fill: '#373a47'
@@ -31,7 +33,7 @@ const styles = {
   bmItemList: {
     color: '#b8b7ad',
     padding: '10px',
-    textAlign: 'center'
+    textAlign: 'center',
   },
   bmItem: {
     display: 'block'
@@ -65,13 +67,20 @@ class Layout extends React.Component {
         return (
             <div>
                 <Head>
-                  <meta name="viewport" content="width=device-width, initial-scale=1" />
-                  <meta charSet="utf-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1" />
+                    <meta charSet="utf-8" />
+                    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" />
+                    <link rel="stylesheet" type="text/css" charSet="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+                    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
                 </Head>
                 <style jsx global>{`
                   body { 
                     margin: 0;
                     padding: 0;
+                  }
+
+                  *:focus {
+                    outline: none;
                   }
 
                 `}</style>
