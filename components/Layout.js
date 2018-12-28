@@ -25,7 +25,7 @@ const styles = {
     padding: '2.5em 1.5em 0',
     fontSize: '1.15em',
     overflow: 'hidden !important',
-    position: 'fixed !important'
+
   },
   bmMorphShape: {
     fill: '#373a47'
@@ -36,7 +36,7 @@ const styles = {
     textAlign: 'center',
   },
   bmItem: {
-    display: 'block'
+    display: 'inline-block'
   },
   bmOverlay: {
     background: 'rgba(0, 0, 0, 0.3)'

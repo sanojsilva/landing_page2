@@ -4,7 +4,8 @@ import hero_image2 from '../static/hero_image2.jpeg';
 import hero_image3 from '../static/hero_image3.jpeg';
 import styled from 'styled-components';
 import Slider from 'react-slick';
-import HeroText from '../components/HeroText';
+import HeroText from '../components/Hero/HeroText';
+import About from '../components/About/About';
 
 
 const ImageWrapper = styled.div`
@@ -40,10 +41,7 @@ const Index = (props) => {
             <Slider {...settings}>
                 {images.map((image, index) => <ImageWrapper image={image} key={index}></ImageWrapper>)}
             </Slider>
-
-            <div>
-                Hello world
-            </div>
+            <About />
         </Layout>
     );
 }

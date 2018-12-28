@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 const RoundedButtonWrapper = styled.button`
     border: none;
-    border-radius: 10px;
-    padding: 12px 40px;
+    border-radius: 20px;
+    padding: 15px 40px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
@@ -38,6 +38,9 @@ const SquareButtonWrapper = styled.button`
     background-position: center;
     transition: background 0.8s;
     margin: 5px;
+    flex: 1;
+    font-family: Roboto;
+
 
     &:hover {
         background: ${props => props.backgroundColor} radial-gradient(circle, transparent 1%, ${props => props.backgroundColor} 1%) center/15000%;
