@@ -1,6 +1,7 @@
 {
     "version": 2,
     "name": "Food Landing Page",
+    "alias": ["food-landing-page.now.sh", "www.food-landing-page.now.sh"],
     "builds": [
         { "src": "package.json", "use": "@now/static-build" }
     ]

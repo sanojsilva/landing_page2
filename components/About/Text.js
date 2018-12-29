@@ -4,7 +4,7 @@ import { RoundedButton } from '../Buttons';
 
 const TextWrapper = styled.div`
     font-family: Roboto;
-    padding: 50px;
+    margin: 20px 5%;
     min-width: 300px;
 `;
 
