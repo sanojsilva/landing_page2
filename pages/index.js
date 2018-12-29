@@ -6,7 +6,11 @@ import styled from 'styled-components';
 import Slider from 'react-slick';
 import HeroText from '../components/Hero/HeroText';
 import About from '../components/About/About';
-
+import Footer from '../components/Footer/Footer';
+import WhatWeDo from '../components/WhatWeDo/WhatWeDo';
+import Menu from '../components/Menu/Menu';
+import Head from 'next/head';
+import '../styles.css';
 
 const ImageWrapper = styled.div`
     background-image: linear-gradient(rgba(0,0,0,0), rgba(0, 0, 0, 0.5)), url(${props => props.image});
@@ -18,32 +22,41 @@ const ImageWrapper = styled.div`
     background-attachment: fixed;
 `;
 
-const Index = (props) => {
+class Index extends React.Component {
 
-    const settings = {
-        dots: false,
-        infinite: true,
-        fade: true,
-        autoplay: true,
-        speed: 5000,
-        arrows: false
-    };
 
-    const images = [
-        hero_image1,
-        hero_image2,
-        hero_image3
-    ];
+    render() {
 
-    return (
-        <Layout>
-            <HeroText />
-            <Slider {...settings}>
-                {images.map((image, index) => <ImageWrapper image={image} key={index}></ImageWrapper>)}
-            </Slider>
-            <About />
-        </Layout>
-    );
+        const settings = {
+            dots: false,
+            infinite: true,
+            fade: true,
+            autoplay: true,
+            speed: 5000,
+            arrows: false
+        };
+
+        const images = [
+            hero_image1,
+            hero_image2,
+            hero_image3
+        ];
+
+        return (
+            <React.Fragment>
+                <Layout>
+                    <HeroText />
+                    <Slider {...settings}>
+                        {images.map((image, index) => <ImageWrapper image={image} key={index}></ImageWrapper>)}
+                    </Slider>
+                    <About />
+                    <WhatWeDo />
+                    <Menu />
+                    <Footer />
+                </Layout>
+            </React.Fragment>
+        );
+    }
 }
 
 export default Index;

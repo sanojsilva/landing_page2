@@ -5,6 +5,7 @@ import { RoundedButton } from '../Buttons';
 const TextWrapper = styled.div`
     font-family: Roboto;
     padding: 50px;
+    min-width: 300px;
 `;
 
 const Title = styled.h2`

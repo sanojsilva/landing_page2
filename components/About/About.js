@@ -2,26 +2,29 @@ import styled from 'styled-components';
 import Fade from 'react-reveal/Fade'
 import Text from './Text';
 import Image from './Image';
+import Grid from '@material-ui/core/Grid';
 
 const AboutWrapper = styled.div`
-    display: flex;
+    flex-grow: 1;
+
 `;
 
 
 const About = (props) => {
     return (
         <AboutWrapper>
-            <div style={{flex: '1'}}>
-                <Fade left>
-                    <Image />
-                </Fade>
-            </div>
-
-            <div style={{flex: '1'}}>
-                <Fade right>
-                    <Text />
-                </Fade>
-            </div>
+            <Grid container>
+                <Grid item xs>
+                    <Fade left>
+                        <Image /> 
+                    </Fade>
+                </Grid>
+                <Grid item xs>
+                    <Fade right>
+                        <Text /> 
+                    </Fade>
+                </Grid>
+            </Grid>
         </AboutWrapper>
     );
 }

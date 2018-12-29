@@ -8,6 +8,8 @@ const ImageWrapper = styled.div`
     margin: 40px;
     border: 5px solid gray;
     height: 400px;
+    min-width: 300px;
+    border-radius: 20px;
 `;
 
 const Image = (props) => {

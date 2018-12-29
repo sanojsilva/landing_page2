@@ -7,7 +7,7 @@ const HeroTextWrapper = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: black;
     z-index: 1;
     //max-width: 400px;
 `;
@@ -38,7 +38,7 @@ const HeroText = (props) => {
 
     return(
         <HeroTextWrapper>
-            <Zoom>
+            <Zoom ssrFadeout>
                 <Title>
                     Best Food In The World
                 </Title>
