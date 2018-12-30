@@ -44,8 +44,8 @@ const HeroText = (props) => {
                 </Title>
                 <Text>Elit iure voluptatem modi dolorem maiores dignissimos veritatis Numquam provident earum ariatur Elit iure voluptatem modi dolorem maiores dignissimos veritatis Numquam provident earum ariatur</Text>
                 <ButtonsWrapper>
-                    <SquareButton backgroundColor="tomato" textColor="white" text="Learn More" />
-                    <SquareButton backgroundColor="transparent" textColor="white" text="View Food Types" />
+                    <SquareButton backgroundColor="tomato" textColor="white" text="Menu" />
+                    <SquareButton backgroundColor="transparent" textColor="white" text="Gallery" />
                 </ButtonsWrapper>
             </Zoom>
         </HeroTextWrapper>

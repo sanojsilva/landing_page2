@@ -8,6 +8,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
+import FoodList from './FoodList';
 
 const MenuWrapper = styled.div`
     //margin: 0 5%;
@@ -71,7 +72,7 @@ class Menu extends React.Component {
         ];
 
         return (
-            <MenuWrapper>
+            <React.Fragment>
                 <Title>Our Menu</Title>
                   <div className={classes.root}>
                     <AppBar position="static" color="default">
@@ -83,16 +84,12 @@ class Menu extends React.Component {
                         scrollable
                         scrollButtons="auto"
                       >
-                          {tabs.map((tab, index) => <Tab label={tab} />)}
+                          {tabs.map((tab, index) => <Tab key={index} label={tab} />)}
                       </Tabs>
                     </AppBar>
-                    {value === 0 && <TabContainer>Item One</TabContainer>}
-                    {value === 1 && <TabContainer>Item Two</TabContainer>}
-                    {value === 2 && <TabContainer>Item Three</TabContainer>}
-                    {value === 3 && <TabContainer>Item Four</TabContainer>}
-                    {value === 4 && <TabContainer>Item Five</TabContainer>}
+                    {tabs.map((tab, index) => value == index && <TabContainer key={index}><FoodList type={tab} /></TabContainer>)}
                   </div>
-            </MenuWrapper>
+            </React.Fragment>
         );
     }
 }
